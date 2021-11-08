@@ -7,13 +7,14 @@ body {
   background-color: rgb(250, 250, 250);
   font-family: 'Red Hat Mono', monospace;
   color: rgb(10, 10, 10);
-  h1 {
-    font-weight: 500;
-  }
 }
 
 .container {
   margin: 24px;
+}
+
+h1 {
+  font-weight: 500;
 }
 
 ul {
@@ -21,8 +22,12 @@ ul {
 }
 
 li {
-  margin: 8px;
+  padding: 8px;
   list-style: none;
   font-weight: 300;
   font-size: 24px;
+}
+
+input {
+  font-family: 'Red Hat Mono', monospace;
 }
