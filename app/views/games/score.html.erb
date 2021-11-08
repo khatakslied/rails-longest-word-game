@@ -1,4 +1,6 @@
-<p>score</p>
+<p><%= @result %></p>
+<p>Your points for this round: <%= @round_score %></p>
+<p>Your current running score is: <%= session[:score] %></p>
 
-<%= @result %>
-<%= @check %>
+
+<%= link_to "New Game", "/new" %>

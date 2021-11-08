@@ -1,6 +1,8 @@
+<ul>
 <% @letters.each do |letter| %>
-<%= letter %>
+  <li><%= letter %></li>
 <% end %>
+</ul>
 
 <form action="/score" method="post">
 <input type="text" name="answer">

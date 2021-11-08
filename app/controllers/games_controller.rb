@@ -12,8 +12,12 @@ class GamesController < ApplicationController
     available_array = params[:available_letters].split(" ")
     user_array = params[:answer].split("")
     @check = check_dictionary(params[:answer])
+    @round_score = 0
+    session[:score] = 0 if session[:score].nil?
     if compare_arrays(available_array, user_array) && @check['found'] == true
       @result = 'Well done'
+      @round_score = (user_array.length * 5)
+      session[:score] += @round_score
     elsif compare_arrays(available_array, user_array) == false
       @result = 'Try again'
     elsif @check['found'] == false

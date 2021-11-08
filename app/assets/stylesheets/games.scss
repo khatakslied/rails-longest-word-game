@@ -1,3 +1,28 @@
 // Place all the styles related to the games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;500&display=swap');
+
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: 'Red Hat Mono', monospace;
+  color: rgb(10, 10, 10);
+  h1 {
+    font-weight: 500;
+  }
+}
+
+.container {
+  margin: 24px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 8px;
+  list-style: none;
+  font-weight: 300;
+  font-size: 24px;
+}
